@@ -3,6 +3,9 @@
 This is a simple TestAdapter to get all the methods with a attribute in the assembly, and run a fake test.
 
 ## Usage
+
+The `Simple.TestAdapter` only gonna discovery test if the file name of the assembly end with `Tests`.
+
 By default all tests gonna `Passed` except if the name of the method has `Failed`, `Skipped`, `None`, `NotFound` in it.
 
 ## Example

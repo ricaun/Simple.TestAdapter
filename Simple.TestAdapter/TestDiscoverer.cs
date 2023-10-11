@@ -56,7 +56,7 @@ namespace Simple.TestAdapter
         {
             var testCases = new List<TestCase>();
 
-            var testNamespace = "Simple.NameSpace";
+            var testNamespace = "Simple";
 
             var testCaseName = TestCaseUtils.CreateTestCase(source, testNamespace, "Assembly", "FileName");
             testCaseName.DisplayName = "FileName: " + Path.GetFileNameWithoutExtension(source);
