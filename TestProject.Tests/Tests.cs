@@ -8,7 +8,10 @@ namespace TestProject.Tests
         [Test]
         public void Test()
         {
-
+            foreach (var assembly in System.AppDomain.CurrentDomain.GetAssemblies())
+            {
+                System.Console.WriteLine(assembly.FullName);
+            }
         }
 
         [Test]
