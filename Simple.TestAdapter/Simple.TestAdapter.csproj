@@ -23,6 +23,42 @@
     <DebugType>Full</DebugType>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>Simple.TestAdapter</PackageId>
+    <Version>1.0.0-alpha</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Company>ricaun</Company>
+    <Authors>Luiz Henrique Cassettari</Authors>
+    <CopyrightYears>$([System.DateTime]::Now.ToString('yyyy'))</CopyrightYears>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>$(PackageId)</AssemblyName>
+    <Product>$(PackageId)</Product>
+    <Copyright>Copyright © $(CopyrightYears) $(Company)</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GitHubRepositoryOwner>ricaun</GitHubRepositoryOwner>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/$(GitHubRepositoryOwner)/$(PackageId)</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/$(GitHubRepositoryOwner)/$(PackageId)</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <!--<PackageIcon>icon.png</PackageIcon>-->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.3.2" IncludeAssets="compile; build" PrivateAssets="all" />
   </ItemGroup>
