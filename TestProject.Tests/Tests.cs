@@ -43,5 +43,11 @@ namespace TestProject.Tests
         {
 
         }
+
+        [Test]
+        public void TestPassed2()
+        {
+
+        }
     }
 }
