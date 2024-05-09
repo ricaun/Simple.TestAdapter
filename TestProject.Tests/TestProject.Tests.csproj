@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;net6.0;net8.0-windows</TargetFrameworks>
-    <TargetFrameworks>net8.0-windows</TargetFrameworks>
     <LangVersion>Latest</LangVersion>
     <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
