@@ -17,7 +17,7 @@ namespace Simple.TestAdapter
 
             foreach (var testCase in testCases)
             {
-                Log.Informational($"[RunTests]: {testCase.FullyQualifiedName}");
+                Log.Informational($"[RunTests]: {testCase} [{testCase.DisplayName}] \t{testCase.Id}");
                 var testResult = TestResultUtils.Create(testCase);
                 frameworkHandle.RecordResult(testResult);
             }
