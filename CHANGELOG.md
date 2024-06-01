@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - First Release
 - .NET Framework and .NET Core support
 - Show TestCase Id in log.
+- Set GuidId by FullTestName.
+- Show test output message with outcome.
 
 [vNext]: ../../compare/1.0.0...HEAD
 [1.0.0]: ../../compare/1.0.0

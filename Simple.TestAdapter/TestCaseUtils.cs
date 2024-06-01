@@ -20,15 +20,15 @@ namespace Simple.TestAdapter
                 testCase.DisplayName = displayName;
             }
 
-            // Do not set the GUID here, this breaks the test discovery in net core.
-            //testCase.Id = GetGuid(fullyQualifiedName);
+            // Set the Id to a hash of the fully qualified name
+            testCase.Id = GuidFromString(fullyQualifiedName);
 
             return testCase;
         }
 
-        private static System.Guid GetGuid(string testName)
+        private static System.Guid GuidFromString(string testName)
         {
-            return new System.Guid(testName.GetHashCode(), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            return Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.EqtHash.GuidFromString(testName);
         }
     }
 
