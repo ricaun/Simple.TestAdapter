@@ -1,5 +1,9 @@
 # Simple.TestAdapter
 
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
+[![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
+[![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
+
 This is a simple TestAdapter to get all the methods with a attribute in the assembly, and run a fake test.
 
 ## Usage
@@ -14,7 +18,7 @@ The project [TestProject.Tests](TestProject.Tests) has some sample methods to te
 
 ## License
 
-This package is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia.org/wiki/MIT_License).
+This package is [licensed](LICENSE) under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 
 ---
 

@@ -20,6 +20,8 @@ namespace Simple.TestAdapter
             if (name.Contains("NotFound"))
                 testResult.Outcome = TestOutcome.NotFound;
 
+            testResult.Messages.Add(new TestResultMessage(TestResultMessage.StandardOutCategory, testResult.Outcome.ToString()));
+
             return testResult;
         }
     }

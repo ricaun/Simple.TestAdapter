@@ -41,6 +41,7 @@ namespace Simple.TestAdapter
 
             foreach (var testCase in DiscoverTests(source))
             {
+                Log.Informational($"[TestCase]: {testCase} [{testCase.DisplayName}] \t{testCase.Id}");
                 discoverySink?.SendTestCase(testCase);
             }
         }
